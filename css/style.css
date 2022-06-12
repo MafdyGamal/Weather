@@ -1,0 +1,104 @@
+body{
+    background-color: #1e202b;
+}
+:root{
+    --white : #fff
+}
+
+nav .logo .logo-link{
+    text-decoration: none;
+    display: flex;
+}
+.logo .logo-link .img-logo {
+    width: 74px;
+    height: 46px;
+}
+.logo .logo-link .logo-name {
+    color: var(--white);
+}
+.logo .logo-link h1{
+    font-size: 1.5rem;
+}
+
+.logo .logo-link p{
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.links ul{
+    list-style: none;
+}
+.links ul li {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.5s;
+    
+}
+
+.links ul li:hover ,.active {
+    color: #0dcaf0;
+    border: 2px solid #0dcaf0 !important;
+}
+.weather-search {
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    padding: 70px;
+}
+.form-control{
+    border-radius: 50px;
+    background-color: #1e202b;
+    border-color: #1e202b;
+} 
+.input-grop{
+    position: relative;
+    margin-bottom: 80px;
+}
+.btn {
+    border-radius: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+/* background Div Date In The Weater Today */
+.date {
+    background-color: #2d303d;
+    border-radius: 20px  0px 0px 0px;
+}
+/* Background Div Data Weather In Weather Today */
+.bg-weather {
+    background-color: #323544;
+    border-radius: 20px 0px 0px 20px;
+}
+/* Icon Default */
+.icons .icon {
+    width: 25px;
+}
+/*Size Font h1 temperature  */
+.weather-today h1{
+    font-size: 6rem;
+}
+/* Background Div Date In Div Weather Tomorrow */
+.date-tomorrow{
+    background-color: #222530;
+}
+/* Background Div Date Weather Tomorrow  */
+.bg-weather-tomorrow{
+    background-color: #262936;
+}
+/* Style Line Height In Div Date Weather Tomorrow */
+.Tomorrow-data {
+    line-height: 4rem;
+}
+/* Border Raeius To Div After Tomorrow */
+.border-weather{
+    border-radius: 0px 20px 20px 0px;
+}
+.border-top-right{
+    border-radius: 0px 20px 0px 0px;
+}
+/* Postion Dive Show Weather data */
+.display-data{
+    position: relative;
+    bottom: 150px;
+}

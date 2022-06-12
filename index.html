@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Font Family Open Sans -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <nav class=" p-5">
+   <div class="container d-flex">
+    <div class="logo">
+      <a href="#" class="logo-link">
+        <img class="img-logo pe-3" src="./images/logo@2x.png">
+        <div class="logo-name">
+          <h1>Weather</h1>
+          <p>tagline goes here</p>
+        </div>  
+      </a>
+    </div>
+    <div class="links ms-auto">
+      <ul class=" text-white d-flex ">
+        <li class="mx-2 px-4 py-1 active">Home</li>
+        <li class="mx-2 px-4 py-1">News</li>
+        <li class="mx-2 px-4 py-1">Live cameras</li>
+        <li class="mx-2 px-4 py-1"> Photos</li>
+        <li class="mx-2 px-4 py-1">Contact</li>
+      </ul>
+    </div>
+   </div>
+  </nav>
+  <section class="weather-search">
+    <div class="input-grop">
+      <input type="text" class="form-control py-3 px-4" id="inpLocation" oninput="search(this.value)"  placeholder="Find Your Location..." name="" >
+      <button class="btn btn-info px-5 " id="btn">Find</button>
+    </div>
+  </section>
+  <section class="display-data">
+    <div class="container">
+      <div class="row py-5" id="row">
+        
+      </div>      
+    </div>
+  </section>
+
+  <footer>
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="input-grop">
+            <input type="text" class="form-control border border-1 border-primary py-3 px-4" id="x"  placeholder="Find Your Location..." name="" >
+            <button class="btn btn-info px-5 " id="btn">Find</button>
+          </div>
+          <p class="text-muted px-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+        <div class="col-md-4 px-5">
+          <div class="icons">
+          <i class="fa-brands text-primary ps-3 fs-2  fa-facebook"></i>
+          <i class="fa-brands text-primary ps-3 fs-2  fa-twitter"></i>
+          <i class="fa-brands text-primary ps-3 fs-2  fa-google-plus"></i>
+          <i class="fa-brands text-primary ps-3 fs-2  fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
