@@ -30,12 +30,12 @@ function display(){
           <h6 class="text-muted">${finalData.location.name}</h6>
           <div class="row">
             <!-- Today's temperature -->
-            <div class="col-md-9 text-center py-3">
+            <div class="col-md-10 text-center py-3">
               <h1 class="text-white fw-bolder pt-5">${finalData.current.temp_c}<sup>O</sup>C</h1>
             </div>
             <!-- Icon that expresses the state of the weather -->
-            <div class="col-md-3 text-center py-5">
-              <img src="https://${finalData.current.condition.icon}" class="w-75 py-5" alt="">
+            <div class="col-md-2 d-flex justify-content-center align-items-center text-center ">
+              <img src="https://${finalData.current.condition.icon}" class="w-100" alt="">
             </div>
             <!-- the state of the weather -->
             <p class="text-primary py-3 fw-bold fs-4 ">${finalData.current.condition.text}</p>
