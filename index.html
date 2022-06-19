@@ -17,28 +17,45 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-  <nav class=" p-5">
-   <div class="container d-flex">
-    <div class="logo">
-      <a href="#" class="logo-link">
-        <img class="img-logo pe-3" src="./images/logo@2x.png">
-        <div class="logo-name">
-          <h1>Weather</h1>
-          <p>tagline goes here</p>
-        </div>  
-      </a>
+
+
+
+  <nav class="navbar p-5 navbar-expand-lg navbar-light ">
+    <div class="container">
+      <div class="logo">
+        <a href="#" class="navbar-brand">
+          <img class="img-logo pe-3" src="./images/logo@2x.png">
+          <div class="logo-name">
+            <h1>Weather</h1>
+            <p>tagline goes here</p>
+          </div>
+        </a> 
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link mx-2 px-4 py-1 text-white active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ">
+           <a class="nav-link mx-2 px-4 py-1 text-white" aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link mx-2 px-4 py-1 text-white" aria-current="page" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link mx-2 px-4 py-1 text-white" aria-current="page" href="#">Photos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link mx-2 px-4 py-1 text-white" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="links ms-auto">
-      <ul class=" text-white d-flex ">
-        <li class="mx-2 px-4 py-1 active">Home</li>
-        <li class="mx-2 px-4 py-1">News</li>
-        <li class="mx-2 px-4 py-1">Live cameras</li>
-        <li class="mx-2 px-4 py-1"> Photos</li>
-        <li class="mx-2 px-4 py-1">Contact</li>
-      </ul>
-    </div>
-   </div>
   </nav>
+
   <section class="weather-search">
     <div class="input-grop">
       <input type="text" class="form-control py-3 px-4" id="inpLocation" oninput="search(this.value)"  placeholder="Find Your Location..." name="" >
@@ -47,8 +64,8 @@
   </section>
   <section class="display-data">
     <div class="container">
-      <div class="row py-5" id="row">
-        
+      <div class="row py-5 px-2" id="row">
+
       </div>      
     </div>
   </section>

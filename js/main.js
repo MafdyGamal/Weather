@@ -18,24 +18,24 @@ async function getWeather(nameCuntry){
 // Display Data In html
 function display(){
     let temp = `<!-- div Wether Today -->
-    <div class="col-md-4 bg-weather p-0">
+    <div class="col-md-4 mb-3 bg-weather p-0">
       <div class="content-data">
         <!-- Day And Date -->
         <div class="date d-flex justify-content-between align-items-center px-4 py-2 text-muted ">
           <p>${days[date.getDay()]}</p>
           <p>${ date.getDate() +months[date.getMonth()]}</p>
         </div>
-        <div class="weather-today px-4 py-5">
+        <div class="weather-today px-4 pt-3">
           <!-- Cuntrry Name -->
           <h6 class="text-muted">${finalData.location.name}</h6>
           <div class="row">
             <!-- Today's temperature -->
-            <div class="col-md-9 text-center py-4">
+            <div class="col-md-9 text-center py-3">
               <h1 class="text-white fw-bolder pt-5">${finalData.current.temp_c}<sup>O</sup>C</h1>
             </div>
             <!-- Icon that expresses the state of the weather -->
             <div class="col-md-3 text-center py-5">
-              <img src="https://${finalData.current.condition.icon}" class="w-100" alt="">
+              <img src="https://${finalData.current.condition.icon}" class="w-75 py-5" alt="">
             </div>
             <!-- the state of the weather -->
             <p class="text-primary py-3 fw-bold fs-4 ">${finalData.current.condition.text}</p>
@@ -53,7 +53,7 @@ function display(){
       </div>
     </div>
     <!-- Div Weather Tomorrow -->
-    <div class="col-md-4 bg-weather-tomorrow p-0">
+    <div class="col-md-4 mb-3 bg-weather-tomorrow p-0">
       <!-- Div Tomorrw Day -->
       <div class="date-tomorrow   text-center  py-2">
         <p class="text-muted">${days[date.getDay()+1]}</p>
@@ -67,7 +67,7 @@ function display(){
       </div>
 
     </div>   
-    <div class="col-md-4 bg-weather p-0 border-weather">
+    <div class="col-md-4 mb-3 bg-weather p-0 border-weather">
       <div class="date  border-top-right py-2 text-center">
         <p class="text-muted">${days[date.getDay()+2]}</p>
       </div>

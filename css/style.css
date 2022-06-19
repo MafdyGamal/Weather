@@ -5,36 +5,35 @@ body{
     --white : #fff
 }
 
-nav .logo .logo-link{
+nav .navbar-brand{
     text-decoration: none;
     display: flex;
 }
-.logo .logo-link .img-logo {
+.navbar-brand .img-logo {
     width: 74px;
     height: 46px;
 }
-.logo .logo-link .logo-name {
+.navbar-brand .logo-name {
     color: var(--white);
 }
-.logo .logo-link h1{
+.navbar-brand h1{
     font-size: 1.5rem;
 }
-
-.logo .logo-link p{
+.navbar-toggler{
+    background-color: #0dcaf0;
+}
+.navbar-brand p{
     font-size: 0.8rem;
     font-family: 'Open Sans', sans-serif;
 }
-.links ul{
-    list-style: none;
-}
-.links ul li {
+.navbar-nav .nav-link {
     border: 2px solid transparent;
     border-radius: 20px;
     transition: all 0.5s;
     
 }
 
-.links ul li:hover ,.active {
+.navbar-nav .nav-link:hover ,.active {
     color: #0dcaf0;
     border: 2px solid #0dcaf0 !important;
 }
